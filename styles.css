@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #96644B;
-    --color-secondary: #E2BE74;
-    --color-tertiary: #83504B;
-    --color-fourth: #562826;
+    --color-primary: #82503D;
+    --color-secondary: #0096FF;
+    --color-tertiary: #E0035F;
+    --color-fourth: #EFF325;
     --font-primary: 'Neue Haas';
 }
 
@@ -47,130 +47,299 @@ body {
 }
 
 .section {
+    display: flex;
     height: 100vh;
     width: 100%;
-    padding: 3rem;
+    padding: 8rem;
 }
 
+
+/* HEADER */
 header {
-    background: url(img/TE-portada.jpg) no-repeat 50% 99%;
+    display: flex;
+    justify-content: center;
+    background: url(img/Chimboteros\ Portada.jpg);
+    background-size: cover;
 }
 
-.logo {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-}
-
-.s1 {
-    background-color: #E2BE74;
+header div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    max-width: 818px;
 }
 
-.s1 div {
-    width: 450px;
-}
-
-.s1 img {
+header div img {
     display: block;
-    width: 400px;
-    margin-bottom: 40px;
+    width: 80%;
 }
 
-.s1 p {
-    font-size: 42px;
-    font-weight: 600;
-    color: var(--color-tertiary);
+header div p {
+    color: var(--color-primary);
+    font-size: 21px;
+    font-weight: 500;
+    text-align: justify;
+    margin-top: 50px;
+    line-height: 150%;
 }
+
+/* INTRODUCCIÓN */
+.s1 {
+    justify-content: center;
+    background: url(img/Chimboteros\ -\ Fotear.jpg) center;
+    background-size: cover;
+}
+
+.heading {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading h2 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.heading p {
+    font-size: 21px;
+    font-weight: 500;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+
+/* MARCAS */
 
 .s2 {
-    background: url(img/TE-libro.jpg) no-repeat center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.s2 img {
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+/* FOTEAR */
+.s3 {
+    background: url(img/Fotear\ -\ Ruta\ Marina.jpg) center;
     background-size: cover;
-    padding: 7rem;
+    padding: 6rem 8rem;
 }
 
-.button {
-    display: block;
-    color: var(--color-fourth);
-    background-color: white;
-    font-size: 40px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    padding: 12px 35px;
-    border-radius: 200px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin: 0% auto;
-}
-
-.s3 .button {
-    color: white;
-    background-color: var(--color-primary);
-
-}
-
-.s3 img {
-    display: block;
-    width: 70%;
-    margin: 30px auto;
-}
-
-.s4 {
-    background: url(img/Web\ 3.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.s4 div {
-    margin: 4% auto 0;
+.project-heading {
+    color: var(--color-primary);
     text-align: center;
-    width: 550px;
+    max-width: 400px;
 }
 
-.s4 img {
-    display: block;
-    width: 100%;
+.s3 .project-heading {
+    transform: translateX(50%);
 }
 
-.s4 p {
-    font-size: 35px;
+.project-heading div p:nth-child(1) {
+    color: var(--color-tertiary);
+    font-size: 18px;
+    border: 2px solid var(--color-tertiary);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0.5px 17px;
+    font-weight: 600;
+}
+
+.project-heading div h2 {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.project-heading div p:nth-child(3) {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.project-heading > p {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.btn {
+    font-family: var(--font-primary);
+    font-size: 27px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.btn--pink {
+    color: var(--color-tertiary);
+}
+
+/* GUSTAR */ 
+.s4 {
+    background: url(img/Proyecto\ Gustar\ Portada.jpg);
+    background-size: cover;
+}
+
+.btn--yellow {
+    color: var(--color-fourth);
+}
+
+.s4 .project-heading {
     color: white;
-    margin-bottom: 30px;
+    transform: translateX(15%);
 }
 
+.s4 .project-heading div p:first-child {
+    color: var(--color-fourth);
+    border-color: var(--color-fourth);
+}
+
+/* VIVA */
 .s5 {
-    background-color: #00CCFF;
+    background: url(img/Proyecto\ Viva\ Portada.jpg) no-repeat center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.s5 .project-heading {
+    max-width: 630px;
+}
+
+/* FILIN */
+.s6 {
+    background: url(img/Proyecto\ Filin\ portada.jpg) no-repeat center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.s6 .project-heading {
+    max-width: 430px;
+    color: white;
+}
+
+.s6 .project-heading div p:first-child {
+    color: #4BB4B5;
+    border-color: #4BB4B5;
+}
+
+.proximamente {
+    display: inline-block;
+    font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4BB4B5;
+    margin-top: 30px;
+}
+
+/* LINDO */
+.s7 {
+    background: url(img/Proyecto\ Lindo\ Portada.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.s7 .project-heading {
+    max-width: 500px;
+    color: white;
+}
+
+.s7 .project-heading div p:first-child {
+    color: var(--color-fourth);
+    border: 1.5px solid var(--color-fourth);
+    font-weight: 500;
+}
+
+.s7 .proximamente {
+    color: var(--color-fourth);
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+/* PROCESO INNOVADOR */
+.s8 {
+    background-color: #F2F2F2;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+.s8__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.s8__images img {
+    margin: 0 10px;
+    height: 90%;
+}
+
+/* PRODUCTOS CULTURALES */
+.s9 {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s9__banner {
+    width: 1400px;
+    height: 500px;
+    background: url(img/Tesoros\ Escondidos\ Plataforma.jpg) no-repeat center;
+    background-size: cover;
+    margin: 40px auto;
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.s9__banner div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    width: 250px;
 }
 
-.s5 div {
-    width: 40%;
-    padding-bottom: 15rem;
+.s9__banner div h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--color-primary);
 }
 
-.s5 div p {
-    font-size: 30px;
-    color: var(--color-tertiary);
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.s5 div img {
-    display: block;
+.s9__banner div img {
     width: 100%;
 }
 
-.s5 span {
-    font-size: 22px;
-    color: white;
-    position: absolute;
-    bottom: 10%;
+.s9__banner div img:nth-child(2) {
+    margin: 30px 0;
+}
+
+.s9__banner div p {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.s9__banner div img:nth-child(4) {
+    width: 70%;
+}
+
+/* GALERÍA */
+.gallery {
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.gallery__item img {
+    width: 100%;
 }
