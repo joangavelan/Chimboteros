@@ -58,7 +58,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background: url(img/Chimboteros\ Portada.jpg);
+    background: url(img/Chimboteros\ Portada.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -67,6 +67,7 @@ header div {
     flex-direction: column;
     align-items: center;
     max-width: 818px;
+    margin-top: 3rem;
 }
 
 header div img {
@@ -95,7 +96,7 @@ header div p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -107,7 +108,7 @@ header div p {
 .heading p {
     font-size: 21px;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
     margin-top: 20px;
     line-height: 150%;
 }
@@ -139,7 +140,9 @@ header div p {
 }
 
 .s3 .project-heading {
+    max-width: 450px;
     transform: translateX(50%);
+    margin-top: 2rem;
 }
 
 .project-heading div p:nth-child(1) {
@@ -153,19 +156,19 @@ header div p {
 }
 
 .project-heading div h2 {
-    font-size: 70px;
+    font-size: 73px;
     font-weight: 600;
     margin: 5px 0;
 }
 
 .project-heading div p:nth-child(3) {
-    font-size: 30px;
+    font-size: 33px;
     font-style: italic;
     margin-top: -5px;
 }
 
 .project-heading > p {
-    font-size: 30px;
+    font-size: 34px;
     margin: 15px 0;
 }
 
@@ -194,6 +197,7 @@ header div p {
 .s4 .project-heading {
     color: white;
     transform: translateX(15%);
+    margin-top: 5rem;
 }
 
 .s4 .project-heading div p:first-child {
@@ -209,7 +213,7 @@ header div p {
 }
 
 .s5 .project-heading {
-    max-width: 630px;
+    max-width: 750px;
 }
 
 /* FILIN */
@@ -220,7 +224,7 @@ header div p {
 }
 
 .s6 .project-heading {
-    max-width: 430px;
+    max-width: 450px;
     color: white;
 }
 
@@ -246,7 +250,7 @@ header div p {
 }
 
 .s7 .project-heading {
-    max-width: 500px;
+    max-width: 530px;
     color: white;
 }
 
@@ -274,7 +278,7 @@ header div p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 35px 0;
 }
 
 .s8__images img {
@@ -294,7 +298,7 @@ header div p {
     height: 500px;
     background: url(img/Tesoros\ Escondidos\ Plataforma.jpg) no-repeat center;
     background-size: cover;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 4rem 10rem;
     display: flex;
     justify-content: flex-end;
@@ -370,6 +374,10 @@ header div p {
     align-items: flex-end;
 }
 
+.gallery__item--1 div {
+    margin-bottom: 10px;
+}
+
 .gallery__item--1 div p {
     margin-top: 15px;
 }
@@ -414,8 +422,8 @@ header div p {
 }
 
 .s10 img {
-    width: 1300px;
-    margin: 60px 0;
+    width: 1200px;
+    margin: 80px 0;
 }
 
 /* FOOTER */
@@ -433,7 +441,7 @@ header div p {
 }
 
 .s11 p {
-    font-size: 30px;
+    font-size: 21px;
     margin: 40px;
 }
 
