@@ -59,7 +59,7 @@ header {
     display: flex;
     justify-content: center;
     background: url(img/Chimboteros\ Portada.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 header div {
@@ -87,7 +87,7 @@ header div p {
 /* INTRODUCCIÓN */
 .s1 {
     justify-content: center;
-    background: url(img/Chimboteros\ -\ Fotear.jpg) center;
+    background: url(img/Chimboteros\ -\ Fotear.jpg) no-repeat center;
     background-size: cover;
 }
 
