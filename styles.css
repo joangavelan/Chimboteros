@@ -338,7 +338,7 @@ header div p {
 
 /* GALERÍA */
 .gallery {
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -563,11 +563,28 @@ header div p {
     }
 
     .gallery {
+        width: 100%;
         flex-direction: column;
+        margin: 0 auto;
     }
 
     .gallery__item {
-        margin: 0 auto 20px !important;
+        width: 100%;
+    }
+
+    .gallery__item {
+        height: 450px;
+        padding: 20px;
+    }
+
+    .gallery__item div h2 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .gallery__item div p {
+        font-size: 18px;
+        margin: 0;
     }
 
     .s10 {
