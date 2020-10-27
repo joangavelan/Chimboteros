@@ -501,7 +501,7 @@ header div p {
     }
 
     .s4 {
-        background-position: 5% 100%;
+        background-position: 8% 100%;
     }
 
     .s7 {
@@ -570,9 +570,6 @@ header div p {
 
     .gallery__item {
         width: 100%;
-    }
-
-    .gallery__item {
         height: 450px;
         padding: 20px;
     }
@@ -585,6 +582,14 @@ header div p {
     .gallery__item div p {
         font-size: 18px;
         margin: 0;
+    }
+
+    .gallery__item--3 {
+        background-position: 5% 100%;
+    }
+
+    .gallery__item--6 {
+        background-position: 73% 100%;
     }
 
     .s10 {
