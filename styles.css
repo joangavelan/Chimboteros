@@ -126,6 +126,10 @@ header div p {
     margin-top: 60px;
 }
 
+.s2 img:nth-child(3) {
+    display: none;
+}
+
 /* FOTEAR */
 .s3 {
     background: url(img/Fotear\ -\ Ruta\ Marina.jpg) center;
@@ -464,7 +468,7 @@ header div p {
 
 @media only screen and (max-width: 450px) {
     header {
-        background-position: 100% 100%;
+        background-position: 100%;
     }
     
     header .logo {
@@ -483,11 +487,6 @@ header div p {
         font-size: 32px;
     }
 
-
-    .s2 {
-        height: auto;
-    }
-
     .s3,
     .s4,
     .s5,
@@ -496,16 +495,30 @@ header div p {
         height: 70vh;
     }
 
+    .s2,
+    .s8,
+    .s10 {
+        height: auto;
+    }
+
+    .s2 img:nth-child(2) {
+        display: none;
+    }
+
+    .s2 img:nth-child(3) {
+        display: block;
+    }
+
     .s3 {
         background-position: 69% 100%;
     }
 
     .s4 {
-        background-position: 8% 100%;
+        background-position: 10% 100%;
     }
 
     .s7 {
-        background-position: 50% 100%;
+        background-position: 49% 100%;
     }
 
     .section .project-heading {
@@ -532,10 +545,6 @@ header div p {
 
     .proximamente {
         font-size: 20px;
-    }
-
-    .s8 {
-        height: auto;
     }
 
     .s8__images {
@@ -581,7 +590,7 @@ header div p {
 
     .gallery__item div p {
         font-size: 18px;
-        margin: 0;
+        margin: 3px 0;
     }
 
     .gallery__item--3 {
@@ -590,10 +599,6 @@ header div p {
 
     .gallery__item--6 {
         background-position: 73% 100%;
-    }
-
-    .s10 {
-        height: auto;
     }
 
     .s10 img {
