@@ -339,9 +339,19 @@ header div p {
 /* GALERÍA */
 .gallery {
     width: 1400px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__item {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+}
+
+.gallery__item:nth-child(1),
+.gallery__item:nth-child(3),
+.gallery__item:nth-child(5) {
+    margin-right: 30px;
 }
 
 .gallery__item img {
@@ -447,4 +457,133 @@ header div p {
 
 .s11 img {
     width: 250px;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 450px) {
+    header {
+        background-position: 100% 100%;
+    }
+    
+    header .logo {
+        width: 100%;
+    }
+
+    .section {
+        padding: 2rem;
+    }
+
+    .section p {
+        font-size: 18px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+
+
+    .s2 {
+        height: auto;
+    }
+
+    .s3,
+    .s4,
+    .s5,
+    .s6,
+    .s7 {
+        height: 70vh;
+    }
+
+    .s3 {
+        background-position: 69% 100%;
+    }
+
+    .s4 {
+        background-position: 5% 100%;
+    }
+
+    .s7 {
+        background-position: 50% 100%;
+    }
+
+    .section .project-heading {
+        width: 100%;
+        transform: translateX(0); 
+        margin-top: 10px;
+    }
+
+    .section .project-heading h2 {
+        font-size: 40px;
+    }
+
+    .section .project-heading div p:nth-child(3) {
+        font-size: 23px;
+    }
+
+    .section .project-heading div p:nth-child(1) {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .proximamente {
+        font-size: 20px;
+    }
+
+    .s8 {
+        height: auto;
+    }
+
+    .s8__images {
+        flex-direction: column;
+    }
+
+    .s8__images img {
+        width: 100%;
+    }
+
+    .s8__images img:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    .s9__banner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: 100% 100%;
+    }
+
+    .s9__banner > div > h2 {
+        font-size: 45px;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery__item {
+        margin: 0 auto 20px !important;
+    }
+
+    .s10 {
+        height: auto;
+    }
+
+    .s10 img {
+        width: 100%;
+    }
+
+    .s11 {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .s11 img {
+        width: 200px;
+    }
 }
