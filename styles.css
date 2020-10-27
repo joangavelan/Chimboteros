@@ -475,6 +475,10 @@ header div p {
         width: 100%;
     }
 
+    header div p {
+        margin-top: 20px;
+    }
+
     .section {
         padding: 2rem;
     }
