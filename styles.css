@@ -384,7 +384,7 @@ header div p {
 }
 
 .gallery__item--1 {
-    background-image: url(img/Chimboteros\ 09-01.jpg);
+    background-image: url(img/Libro\ Tesoros\ Escondidos.jpg);
     align-items: flex-end;
 }
 
@@ -397,7 +397,7 @@ header div p {
 }
 
 .gallery__item--2 {
-    background-image: url(img/Chimboteros\ 09-02.jpg);
+    background-image: url(img/Chimboteros\ -\ Plataforma\ Web.jpg);
     color: var(--color-primary);
 }
 
@@ -406,20 +406,20 @@ header div p {
 } 
 
 .gallery__item--3 {
-    background-image: url(img/Chimboteros\ 09-03.jpg);
+    background-image: url(img/Evento\ Exposición\ de\ Fotos\ -\ Fotear.jpg);
     align-items: flex-end;
 }
 
 .gallery__item--4 {
-    background-image: url(img/Chimboteros\ 09-04.jpg);
+    background-image: url(img/Pescador\ Chimbotero.jpg);
 }
 
 .gallery__item--5 {
-    background-image: url(img/Chimboteros\ 09-05.jpg);
+    background-image: url(img/Festival\ La\ Ruta\ Del\ Ceviche\ -\ Proyecto\ Gustar.jpg);
 }
 
 .gallery__item--6 {
-    background-image: url(img/Chimboteros\ 09-06.jpg);
+    background-image: url(img/Excursión\ Fotear\ 2016.jpg);
     color: var(--color-primary);
 }
 
