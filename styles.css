@@ -179,7 +179,7 @@ header div p {
 .btn {
     font-family: var(--font-primary);
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: -1px;
 }
@@ -240,7 +240,7 @@ header div p {
 .proximamente {
     display: inline-block;
     font-size: 23px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     color: #4BB4B5;
     margin-top: 30px;
@@ -266,7 +266,6 @@ header div p {
 
 .s7 .proximamente {
     color: var(--color-fourth);
-    font-weight: 400;
     margin-top: 15px;
 }
 
@@ -436,7 +435,8 @@ header div p {
 }
 
 .s10 img {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 80px 0;
 }
 
@@ -467,18 +467,18 @@ header div p {
 /*RESPONSIVE*/
 
 @media only screen and (max-width: 450px) {
+
+    /* header */
     header {
-        background-position: 100%;
+        background-image: url(img/responsive/Kayak.jpg);
     }
-    
-    header .logo {
-        width: 100%;
-    }
+
 
     header div p {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
+    /* section-general */
     .section {
         padding: 2rem;
     }
@@ -491,42 +491,39 @@ header div p {
         font-size: 32px;
     }
 
-    .heading p {
-        margin-top: 10px;
-    }
-
-    .s3,
-    .s4,
-    .s5,
-    .s6,
-    .s7 {
-        height: 70vh;
-    }
-
     .s2,
     .s8,
     .s10 {
         height: auto;
     }
 
-    .s2 img:nth-child(2) {
-        display: none;
+    /* heading */
+    .heading p {
+        margin-top: 10px;
     }
 
-    .s2 img:nth-child(3) {
-        display: block;
+    /* sections */
+    .s1 {
+        background-image: url(img/responsive/Expedición\ Fotear.jpg);
     }
+
+    .s2 img:nth-child(2) {display: none;}
+    .s2 img:nth-child(3) {display: block;}
 
     .s3 {
-        background-position: 69% 100%;
+        background-image: url(img/responsive/Travesía\ en\ el\ mar.jpg);
     }
 
     .s4 {
-        background-position: 10% 100%;
+        background-image: url(img/responsive/Causa\ Ancashina.jpg);
+    }
+
+    .s6 {
+        background-image: url(img/responsive/Aldea.jpg);
     }
 
     .s7 {
-        background-position: 50% 100%;
+        background-image: url(img/responsive/Arte\ Popular.jpg);
     }
 
     .section .project-heading {
@@ -607,10 +604,6 @@ header div p {
 
     .gallery__item--6 {
         background-position: 73% 100%;
-    }
-
-    .s10 img {
-        width: 100%;
     }
 
     .s11 {
