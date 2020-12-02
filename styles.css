@@ -504,7 +504,12 @@ header div p {
 
     /* heading */
     .heading p {
+        font-size: 15px;
         margin-top: 10px;
+    }
+
+    .heading h2 {
+        font-size: 30px;
     }
 
     /* sections */
@@ -583,15 +588,32 @@ header div p {
 
     .s9__banner {
         width: 100%;
+        height: 530px;
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
-        background-position: 100% 100%;
+        background-position: 0 100%;
+        background-size: 167%;
+        background-color: #ECECEC;
+        padding-bottom: 30px;
     }
 
     .s9__banner > div > h2 {
-        font-size: 45px;
+        font-size: 35px;
     }
+
+    .s9__banner div img:nth-child(2) {
+        width: 200px;
+        margin: 20px 0;
+    }
+
+    .s9__banner div p {
+        margin: 0 0 10px;
+    }
+
+    /* .s9__banner div img:nth-child(4)::after {
+        content: "\00a0 ";
+    }  */
 
     .gallery {
         width: 100%;
@@ -601,17 +623,17 @@ header div p {
 
     .gallery__item {
         width: 100%;
-        height: 450px;
+        height: 340px;
         padding: 20px;
     }
 
     .gallery__item div h2 {
-        font-size: 32px;
+        font-size: 30px;
         margin: 0;
     }
 
     .gallery__item div p {
-        font-size: 18px;
+        font-size: 15px;
         margin: 3px 0;
     }
 
