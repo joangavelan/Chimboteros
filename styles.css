@@ -440,6 +440,11 @@ header div p {
     margin: 80px 0;
 }
 
+.s10 .ec-resp {
+    display: none;
+}
+
+
 /* FOOTER */
 .s11 {
     background: url(img/Isla\ Blanca.jpg) no-repeat center;
@@ -518,12 +523,24 @@ header div p {
         background-image: url(img/responsive/Causa\ Ancashina.jpg);
     }
 
+    .s5 {
+        background-image: url(img/responsive/Botes.jpg);
+    }
+
     .s6 {
         background-image: url(img/responsive/Aldea.jpg);
     }
 
     .s7 {
         background-image: url(img/responsive/Arte\ Popular.jpg);
+    }
+
+    .s10 .ec-desk {
+        display: none;
+    }
+
+    .s10 .ec-resp {
+        display: block;
     }
 
     .section .project-heading {
