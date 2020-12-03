@@ -540,6 +540,11 @@ header div p {
         background-image: url(img/responsive/Arte\ Popular.jpg);
     }
 
+    .s11 {
+        background-image: url(img/responsive/Puerto\ de\ Chimbote.jpg);
+        background-position: 100% 0%;
+    }
+
     .s10 .ec-desk {
         display: none;
     }
