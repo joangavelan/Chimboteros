@@ -88,7 +88,8 @@ header div p {
 .nav {
     display: block;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.90);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     top: 0;
     left: 50%;
