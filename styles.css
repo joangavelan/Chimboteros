@@ -88,7 +88,7 @@ header div p {
 .nav {
     display: block;
     position: absolute;
-    width: 800px;
+    width: 900px;
     top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -99,7 +99,17 @@ header div p {
 .nav ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
+}
+
+.nav ul img {
+    width: 35px;
+}
+
+.nav ul img:last-of-type {
+    width: 26px;
+    margin-left: -5px;
 }
 
 .nav ul li a {
