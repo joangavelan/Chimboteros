@@ -521,6 +521,10 @@ header div p {
         font-size: 32px;
     }
 
+    .s1 {
+        height: 70vh;
+    }
+
     .s2,
     .s8,
     .s10 {
