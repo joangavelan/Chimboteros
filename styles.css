@@ -88,7 +88,7 @@ header div p {
 .nav {
     display: block;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     width: 100%;
     top: 0;
     left: 50%;
@@ -105,14 +105,14 @@ header div p {
     list-style: none;
 }
 
-.nav ul img {
-    width: 35px;
+.nav ul img[alt="barco"] {
+    width: 40px;
 }
 
-.nav ul img:last-of-type {
-    width: 26px;
-    margin-left: -5px;
+.nav ul img[alt="tesoro"] {
+    width: 30px;
 }
+
 
 .nav ul li a {
     text-decoration: none;
