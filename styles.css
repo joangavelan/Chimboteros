@@ -337,7 +337,8 @@ header div p {
 .section-crear .proximamente {
     color: var(--color-fifth);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 27px;
+    margin-top: 0;
 }
 
 /* PROCESO INNOVADOR */
