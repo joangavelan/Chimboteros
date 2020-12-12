@@ -3,6 +3,7 @@
     --color-secondary: #0096FF;
     --color-tertiary: #E0035F;
     --color-fourth: #EFF325;
+    --color-fifth: #6B0866;
     --font-primary: 'Neue Haas';
 }
 
@@ -311,6 +312,30 @@ header div p {
 .s7 .proximamente {
     color: var(--color-fourth);
     margin-top: 15px;
+}
+
+/* CREAR */
+.section-crear {
+    background-image: url(img/Crear\ Portada.jpg);
+}
+
+.section-crear .project-heading {
+    max-width: 600px;
+    color: white;
+    transform: translateY(37%) translateX(10%);
+}
+
+.section-crear div p:first-child {
+    color: var(--color-fifth);
+    border-color: var(--color-fifth);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.section-crear .proximamente {
+    color: var(--color-fifth);
+    font-weight: 500;
+    font-size: 30px;
 }
 
 /* PROCESO INNOVADOR */
