@@ -6,25 +6,31 @@
     <title>Chimboteros</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image.png" href="img/Chimboteros (Favicon).png">
+    <script src="https://kit.fontawesome.com/542ea1a396.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="section" id="header">
-        <div>
-            <nav class="nav">
-                <ul>
+            <div class="nav-container">
+                <nav class="nav">
                     <a href="#header"><img src="img/barco.png" alt="barco"></a>
-                    <li><a href="#1">Propósito</a></li>
-                    <li><a href="#2">Creaciones</a></li>
-                    <li><a href="#8">Proceso</a></li>
-                    <li><a href="#9">Colecciones</a></li>
-                    <li><a href="#10">Equipo</a></li>
-                    <li><a href="#11">Contacto</a></li>
+                    <ul class="main-menu">
+                        <li><a href="#1">Propósito</a></li>
+                        <li><a href="#2">Creaciones</a></li>
+                        <li><a href="#8">Proceso</a></li>
+                        <li><a href="#9">Colecciones</a></li>
+                        <li><a href="#10">Equipo</a></li>
+                        <li><a href="#11">Contacto</a></li>
+                    </ul>
+                    <button class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
                     <a href="https://tesorosescondidos.pe/" target="_blank"><img src="img/tesoro.png" alt="tesoro"></a>
-                </ul>
-            </nav>
-            <img src="img/Chimboteros (logo).png" alt="Chimboteros logo" class="logo">
-            <p>Desarrollamos proyectos creativos de educación ciudadana para contribuir con la transformación productiva de Chimbote hacia una industria turística y cultural.</p>
-        </div>
+                </nav>
+            </div>
+            <div class="header__heading">
+                <img src="img/Chimboteros (logo).png" alt="Chimboteros logo" class="logo">
+                <p>Desarrollamos proyectos creativos de educación ciudadana para contribuir con la transformación productiva de Chimbote hacia una industria turística y cultural.</p>
+            </div>
     </header>
     
     <section class="section s1" id="1">
@@ -199,5 +205,6 @@
         <p>Culturalismo SAC / Av. José Galvez 380. Chimbote. Perú / C. 963822101 - 939131580 / chimboteros@gmail.com</p>
         <img src="img/Chimboteros (icono).png" alt="Chimboteros icono - barco de papel">
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

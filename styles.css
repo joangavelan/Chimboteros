@@ -69,12 +69,12 @@ header {
     background-size: cover;
 }
 
-header div {
+.header__heading {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 818px;
-    margin-top: 3rem;
+    max-width: 900px;
+    margin-top: 4rem;
 }
 
 header div img {
@@ -91,32 +91,42 @@ header div p {
     line-height: 150%;
 }
 
-.nav {
+.nav-container {
     display: block;
     position: fixed;
     z-index: 9999;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
     padding: 1.5rem;
 }
 
-.nav ul {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
-    list-style: none;
 }
 
-.nav ul img[alt="barco"] {
+.nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 2rem;
+}
+
+.nav i {
+    display: none;
+}
+
+.nav img[alt="barco"] {
     width: 37px;
 }
 
-.nav ul img[alt="tesoro"] {
+.nav img[alt="tesoro"] {
     width: 27px;
     margin-left: -4px;
 }
@@ -318,7 +328,8 @@ header div p {
 
 /* CREAR */
 .section-crear {
-    background-image: url(img/Crear\ Portada.jpg);
+    background: url(img/Crear\ Portada.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .section-crear .project-heading {
@@ -550,10 +561,43 @@ header div p {
         background-image: url(img/responsive/Kayak.jpg);
     }
 
-
     header div p {
         margin-top: 30px;
     }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    /* nav */
+    .nav ul {
+        display: block;
+        text-align: center;
+        order: 1;
+        transition: .3s all ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav ul li {
+        margin: 1.5rem 0;
+    }
+
+    .nav .hamburger {
+        outline: 0;
+        border: 0;
+        width: 18px;
+        order: -1;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .nav .hamburger i {
+        display: block;
+        font-size: 18px;
+        color: var(--color-primary);
+    }
+    
 
     /* section-general */
     .section {
