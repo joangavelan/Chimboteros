@@ -224,7 +224,7 @@ header div p {
 .btn {
     font-family: var(--font-primary);
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     letter-spacing: -1px;
 }
@@ -235,8 +235,11 @@ header div p {
 
 /* GUSTAR */ 
 .s4 {
-    background: url(img/Proyecto\ Gustar\ Portada.jpg);
+    background: url(img/Gustar\ Portada.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
 }
 
 .btn--yellow {
@@ -245,8 +248,7 @@ header div p {
 
 .s4 .project-heading {
     color: white;
-    transform: translateX(15%);
-    margin-top: 5rem;
+    max-width: 800px;
 }
 
 .s4 .project-heading div p:first-child {
