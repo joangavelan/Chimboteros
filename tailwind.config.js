@@ -21,10 +21,13 @@ module.exports = {
       aqua: '#2CE0E1',
       dark: {
         100: '#1A1A1A',
-        200: '#333333'
+        200: '#333333',
+        300: '#2B2A28',
+        400: '#626971'
       },
       white: '#fff',
-      black: '#000'
+      black: '#000',
+      gray: '#C7CCD0'
     },
     extend: {
       backgroundImage: theme => ({
