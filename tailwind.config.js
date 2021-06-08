@@ -13,15 +13,39 @@ module.exports = {
       },
       pink: '#FF0066',
       green: '#34CC67',
-      gold: '#E6B95C',
+      gold: {
+        100: '#E9B047',
+        200: '#CD9631'
+      },
       yellow: '#F0FD34',
       aqua: '#2CE0E1',
       dark: {
         100: '#1A1A1A',
         200: '#333333'
-      }
+      },
+      white: '#fff',
+      black: '#000'
     },
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'header': "url('/img/mobile/Chicas en playa Chimbote.jpg')",
+        'pescadores': "url('/img/mobile/Pescadores de sueños.jpg')",
+        'fotear': "url('/img/mobile/Travesía en el mar.jpg')",
+        'gustar': "url('/img/mobile/Causa Ancashina.jpg')",
+        'viva': "url('/img/mobile/Lanchas pesqueras Chimbote.jpg')",
+        'aldea': "url('/img/mobile/Aldea.jpg')",
+        'lindo': "url('/img/mobile/Arte Popular.jpg')",
+        'internautas': "url('/img/mobile/Internautas.jpg')",
+        'puerto-de-chimbote': "url('/img/mobile/Puerto de Chimbote.jpg')"
+      }),
+      height: {
+        screenHalf: '50vh',
+        screen70: '70vh',
+        screen80: '80vh',
+        screen85: '85vh',
+        screen90: '90vh'
+      }
+    }
   },
   variants: {
     extend: {},
