@@ -23,7 +23,8 @@ module.exports = {
         100: '#1A1A1A',
         200: '#333333',
         300: '#2B2A28',
-        400: '#626971'
+        400: '#626971',
+        500: '#BBBBBB'
       },
       white: '#fff',
       black: '#000',
@@ -39,7 +40,15 @@ module.exports = {
         'aldea': "url('/img/mobile/Aldea.jpg')",
         'lindo': "url('/img/mobile/Arte Popular.jpg')",
         'internautas': "url('/img/mobile/Internautas.jpg')",
-        'puerto-de-chimbote': "url('/img/mobile/Puerto de Chimbote.jpg')"
+        'puerto-de-chimbote': "url('/img/mobile/Puerto de Chimbote.jpg')",
+        'desk-header': "url('/img/Chimboteros Portada.jpg')",
+        'desk-pescadores': "url('/img/Equipo Gustar.jpg')",
+        'desk-fotear': "url('/img/Navegando en el mar.jpg')",
+        'desk-gustar': "url('/img/Gustar Portada.jpg')",
+        'desk-viva': "url('/img/Chimbote en los 50s.jpg')",
+        'desk-internautas': "url('/img/Smartphones.jpg')",
+        'desk-aldea': "url('/img/Proyecto Aldea Portada.jpg')",
+        'desk-lindo': "url('/img/Proyecto Lindo Portada.jpg')"
       }),
       height: {
         screenHalf: '50vh',
