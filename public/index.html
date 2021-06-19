@@ -11,17 +11,17 @@
 <body class="font-neue">
   <!-- header -->
   <header class="h-screen bg-header xl:bg-desk-header bg-cover bg-center relative">
-    <!-- <nav aria-label="main menu">
-    <a href="#Proposito">Propósito</a>
-    <a href="#Creaciones">Creaciones</a>
-    <a href="#Proceso">Proceso</a>
-    <a href="#Productos">Productos</a>
-    <a href="#Equipo">Equipo</a>
-    <a href="#Contacto">Contacto</a>
+    <!-- <nav class="flex justify-center items-center bg-white" aria-label="main menu">
+      <a href="#Proposito">Propósito</a>
+      <a href="#Creaciones">Creaciones</a>
+      <a href="#Proceso">Proceso</a>
+      <a href="#Productos">Productos</a>
+      <a href="#Equipo">Equipo</a>
+      <a href="#Contacto">Contacto</a>
     </nav> -->
     <div class="text-center w-9/12 xl:w-7/12 mx-auto pt-36 xl:pt-52">
       <img class="mx-auto w-full xl:w-8/12" src="/img/Chimboteros (logo).png" alt="Chimboteros logo">
-      <p class="mt-5 text-base lg:text-lg xl:text-2xl font-medium mt-5 xl:mt-12">Desarrollamos proyectos creativos en cultura, producción y turismo sostenible.</p>
+      <p class="text-base lg:text-lg xl:text-2xl font-medium mt-5 xl:mt-12">Desarrollamos proyectos creativos en cultura, producción y turismo sostenible.</p>
     </div>
   </header>
   <!-- pescadores de sueños -->
@@ -39,7 +39,7 @@
         <p class="text-dark-200 text-base lg:text-lg xl:text-xl font-medium mt-3 xl:mt-5">Creamos valor diseñando proyectos que fortalecen nuestra identidad y educan en un estilo de vida más sustentable para el planeta.</p>
       </div>
       <!-- desk img -->
-      <img class="hidden xl:block ml-5" src="/img/Marcas.png" alt="Marcas culturales - Chimboteros">
+      <img class="hidden xl:block" src="/img/Marcas.png" alt="Marcas culturales - Chimboteros">
       <!-- resp img -->
       <img class="mt-5 xl:hidden" src="/img/mobile/Línea de marcas.png" alt="Línea temporal de marcas">
     </div>
@@ -119,27 +119,29 @@
   <!-- proceso -->
   <section class="py-16 xl:py-32 xl:border-t border-dark-500">
     <div class="w-9/12 mx-auto">
-      <div class="text-center xl:w-8/12 xl:mx-auto mb-7 xl:mb-28">
+      <div class="text-center xl:w-8/12 xl:mx-auto mb-7 xl:mb-40">
         <h2 class="text-dark-100 text-4xl lg:text-5xl xl:text-7xl font-medium mb-1.5 xl:mb-4">Proceso</h2>
         <p class="text-dark-100 text-base lg:text-lg xl:text-2xl font-medium">Nos capacitamos, investigamos viajando y diseñamos para convertir nuestros recursos en productos y servicios de educación cultural.</p>
       </div>
       <!-- imgs -->
-      <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 xl:gap-28">
+      <div class="grid grid-cols-1 relative xl:grid-cols-3 gap-5 xl:gap-28">
+        <!-- background image -->
+        <img class="w-9/12 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 -z-1" src="/img/proceso-fondo.png">
         <div class="relative">
           <img src="/img/galería - investigando.png" alt="Fotera fotografiando proceso de pisado de uva">
-          <p class="text-white bottom-7 lg:bottom-10 left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl">Investigando</p>
+          <p class="text-white absolute bottom-7 lg:bottom-10  left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl xl:hidden">Investigando</p>
         </div>
         <div class="relative">
           <img src="/img/galería - aprendiendo.png" alt="Taller de fotografía - Fotear">
-          <p class="text-white bottom-7 lg:bottom-10 left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl">Aprendiendo</p>
+          <p class="text-white absolute bottom-7 lg:bottom-10 left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl xl:hidden">Aprendiendo</p>
         </div>
         <div class="relative">
           <img src="/img/galería - educando.png" alt="Chica mostrando cuadro de Fotear">
-          <p class="text-white bottom-7 lg:bottom-10 left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl">Educando</p>
+          <p class="text-white absolute bottom-7 lg:bottom-10 left-1/2 transform -translate-x-1/2 font-medium text-3xl lg:text-4xl xl:hidden">Educando</p>
         </div>
       </div>
       <!-- descriptions -->
-      <div class="hidden xl:grid grid-cols-3 gap-28 mt-16">
+      <div class="hidden xl:grid grid-cols-3 gap-28 mt-24">
         <div class="col-span-1 text-center p-10">
           <h3 class="text-4xl text-gold-300 font-medium mb-5">Investigando</h3>
           <p class="text-xl text-dark-300 font-medium">Viajes de investigación en rutas con potencial turístico de los nueve distritos de la provincia del Santa.</p>
@@ -217,108 +219,124 @@
   </section>
   <!-- equipo -->
   <section class="py-14 xl:py-28">
-    <div class="w-9/12 mx-auto">
-      <div class="text-dark-100 text-center mb-10 xl:w-7/12 xl:mx-auto">
+    <div class="w-9/12 xl:w-8/12 mx-auto">
+      <div class="text-dark-100 text-center mb-10 xl:mb-20 xl:w-7/12 xl:mx-auto">
         <h2 class="text-4xl lg:text-5xl xl:text-7xl font-medium mb-3 xl:mb-5">Equipo <span class="inline xl:hidden">Creativo</span></h2>
         <p class="text-base lg:text-lg xl:text-xl font-medium">Un buen trabajo es posible gracias al talento y compromiso de amigos chimboteros con valores compartidos y una visión común: el cambio cultural.</p>
       </div>
       <!-- grid -->
-      <div class="grid grid-cols-2 gap-x-10 gap-y-6">
+      <div class="relative grid grid-cols-2 xl:grid-cols-5 gap-x-10 xl:gap-x-24 gap-y-6 xl:gap-y-14">
+        <!-- equipo background image  -->
+        <img class="hidden xl:block w-87/p absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-1" src="/img/equipo-fondo.png">
         <!-- grid item -->
         <div class="flex flex-col text-center">
-          <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">David Aguedo</h4>
-            <em class="text-dark-200 text-base">diseño</em>
+          <div class="order-last xl:order-first">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">David Aguedo</h4>
+            <em class="text-dark-200 text-base xl:text-lg">diseño</em>
           </div>
-          <img class="mx-auto mb-4" src="/img/Equipo/David Aguedo Roncal.png" alt="David Aguedo Roncal">
+          <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/David Aguedo Roncal.png" alt="David Aguedo Roncal">
+        </div>
+        <!-- grid item -->
+        <div class="flex flex-col text-center">
+          <div class="order-last xl:order-first">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Joan Gavelán</h4>
+            <em class="text-dark-200 text-base xl:text-lg">internet</em>
+          </div>
+          <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/Joan Gavelán.png" alt="Joan Gavelán">
+        </div>
+        <!-- grid item -->
+        <div class="flex flex-col text-center">
+          <div class="order-last xl:order-first">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Jazmin Cuba</h4>
+            <em class="text-dark-200 text-base xl:text-lg">educación</em>
+          </div>
+          <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/Jazmín Cuba.png" alt="Jazmín Cuba.png">
+        </div>
+        <!-- grid item -->
+        <div class="flex flex-col text-center">
+          <div class="order-last xl:order-first">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Thony Juárez</h4>
+            <em class="text-dark-200 text-base xl:text-lg">videografía</em>
+          </div>
+          <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/Thony Juárez.png" alt="Thony Juárez">
+        </div>
+        <!-- grid item -->
+        <div class="flex flex-col text-center">
+          <div class="order-last xl:order-first">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Lucía Rojas</h4>
+            <em class="text-dark-200 text-base xl:text-lg">arte</em>
+          </div>
+          <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/Rosario Leonor Sánchez Villegas.png" alt="Lucía Rojas">
         </div>
         <!-- grid item -->
         <div class="flex flex-col text-center">
           <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Joan Gavelán</h4>
-            <em class="text-dark-200 text-base">internet</em>
-          </div>
-          <img class="mx-auto mb-4" src="/img/Equipo/Joan Gavelán.png" alt="Joan Gavelán">
-        </div>
-        <!-- grid item -->
-        <div class="flex flex-col text-center">
-          <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Jazmin Cuba</h4>
-            <em class="text-dark-200 text-base">educación</em>
-          </div>
-          <img class="mx-auto mb-4" src="/img/Equipo/Jazmín Cuba.png" alt="Jazmín Cuba.png">
-        </div>
-        <!-- grid item -->
-        <div class="flex flex-col text-center">
-          <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Thony Juárez</h4>
-            <em class="text-dark-200 text-base">videografía</em>
-          </div>
-          <img class="mx-auto mb-4" src="/img/Equipo/Thony Juárez.png" alt="Thony Juárez">
-        </div>
-        <!-- grid item -->
-        <div class="flex flex-col text-center">
-          <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">José Luis Pinedo</h4>
-            <em class="text-dark-200 text-base">gastronomía</em>
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">José Luis Pinedo</h4>
+            <em class="text-dark-200 text-base xl:text-lg">gastronomía</em>
           </div>
           <img class="mx-auto mb-4" src="/img/Equipo/José Luis Pinedo de la Rosa.png" alt="José Luis Pinedo de la Rosa">
         </div>
         <!-- grid item -->
         <div class="flex flex-col text-center">
           <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Carlos Sánchez</h4>
-            <em class="text-dark-200 text-base">fotografía</em>
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Carlos Sánchez</h4>
+            <em class="text-dark-200 text-base xl:text-lg">fotografía</em>
           </div>
           <img class="mx-auto mb-4" src="/img/Equipo/Carlos Sánchez.png" alt="Carlos Sánchez">
         </div>
         <!-- grid item -->
         <div class="flex flex-col text-center">
           <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Toño Castillo</h4>
-            <em class="text-dark-200 text-base">turismo</em>
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Kary Arias</h4>
+            <em class="text-dark-200 text-base xl:text-lg">comunicación</em>
+          </div>
+          <img class="mx-auto mb-4" src="/img/Equipo/Rosario Leonor Sánchez Villegas.png" alt="Kary Arias">
+        </div>
+        <!-- grid item -->
+        <div class="flex flex-col text-center">
+          <div class="order-last">
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Toño Castillo</h4>
+            <em class="text-dark-200 text-base xl:text-lg">turismo</em>
           </div>
           <img class="mx-auto mb-4" src="/img/Equipo/Marco Antonio Castillo García.png" alt="Marco Antonio Castillo García">
         </div>
         <!-- grid item -->
         <div class="flex flex-col text-center">
           <div class="order-last">
-            <h4 class="text-gold-100 text-lg font-medium leading-none">Rosario Sánchez</h4>
-            <em class="text-dark-200 text-base">comunicación</em>
+            <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">Tatiana Chumpitazi</h4>
+            <em class="text-dark-200 text-base xl:text-lg">emprendimiento</em>
           </div>
-          <img class="mx-auto mb-4" src="/img/Equipo/Rosario Leonor Sánchez Villegas.png" alt="Rosario Leonor Sánchez Villegas">
+          <img class="mx-auto mb-4" src="/img/Equipo/Tatiana Chumpitazi.png" alt="Tatiana Chumpitazi">
         </div>
       </div>
-      <!-- resp img -->
-      <img class="hidden" src="/img/mobile/Equipo Creativo.png" alt="Equipo Creativo Chimboteros">
     </div>
   </section>
   <!-- footer -->
-  <footer class="h-screen bg-puerto-de-chimbote bg-cover bg-center py-16 lg:py-20">
-    <div class="w-9/12 lg:w-96 mx-auto">
+  <footer class="h-screen bg-puerto-de-chimbote xl:bg-desk-footer bg-cover bg-center py-16 xl:py-24 lg:py-20">
+    <div class="w-9/12 lg:w-96 xl:w-4/12 mx-auto">
       <div class="text-dark-200 text-center mb-10">
-        <h2 class="text-4xl lg:text-7xl font-medium">Hola!</h2>
-        <em class="text-base lg:text-2xl font-medium">Consultas y sugerencias</em>
+        <h2 class="text-4xl lg:text-7xl xl:font-8xl font-medium">Hola!</h2>
+        <em class="text-lg lg:text-2xl xl:text-3xl font-medium xl:font-normal">Consultas y sugerencias</em>
       </div>
       <!-- form -->
       <form class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4">
         <!-- nombres -->
         <div class="col-span-1 relative">
-          <label for="name" class="inline-block mb-0.5 lg:mb-1">Nombres:</label>
-          <input type="text" id="name" name="name" required class="text-neue text-sm block w-full border border-dark-400 outline-none rounded-2xl py-1.5 px-3">
+          <label for="name" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Nombres:</label>
+          <input type="text" id="name" name="name" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-full py-2 px-3 xl:px-4">
         </div>
         <!-- correo -->
         <div class="col-span-1 relative">
-          <label for="email" class="inline-block mb-0.5 lg:mb-1">Correo:</label>
-          <input type="email" id="email" name="email" required class="text-neue text-sm block w-full border border-dark-400 outline-none rounded-2xl py-1.5 px-3">
+          <label for="email" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Correo:</label>
+          <input type="email" id="email" name="email" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-full py-2 px-3 xl:px-4">
         </div>
         <!-- mensaje -->
         <div class="col-span-1 relative lg:col-span-2">
-          <label for="message" class="inline-block mb-0.5 lg:mb-1">Mensaje:</label>
-          <textarea id="message" name="message" cols="30" rows="3" required class="text-neue text-sm block w-full border border-dark-400 outline-none rounded-2xl py-1.5 px-3"></textarea>
+          <label for="message" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Mensaje:</label>
+          <textarea id="message" name="message" cols="30" rows="3" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-2xl py-2 px-3 xl:px-4"></textarea>
         </div>
         <!-- submit -->
-        <button type="submit" class="col-span-1 relative lg:col-span-2 block mx-auto py-1.5 px-6 text-white bg-dark-300 rounded-full text-sm lg:text-base outline-none border-0 mt-3 tracking-wide">Enviar</button>
+        <button type="submit" class="col-span-1 relative lg:col-span-2 block mx-auto py-1.5 xl:py-2 px-6 xl:px-8 text-white bg-dark-300 rounded-full text-sm lg:text-base xl:text-lg outline-none border-0 mt-3 tracking-wide">Enviar</button>
       </form>
     </div>
   </footer>

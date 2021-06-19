@@ -49,7 +49,10 @@ module.exports = {
         'desk-viva': "url('/img/Chimbote en los 50s.jpg')",
         'desk-internautas': "url('/img/Smartphones.jpg')",
         'desk-aldea': "url('/img/Proyecto Aldea Portada.jpg')",
-        'desk-lindo': "url('/img/Proyecto Lindo Portada.jpg')"
+        'desk-lindo': "url('/img/Proyecto Lindo Portada.jpg')",
+        'desk-footer': "url('/img/Isla Blanca.jpg')",
+        'proceso': "url('/img/proceso-fondo.png')",
+        'equipo': "url('/img/equipo-fondo.png')"
       }),
       height: {
         screenHalf: '50vh',
@@ -57,6 +60,12 @@ module.exports = {
         screen80: '80vh',
         screen85: '85vh',
         screen90: '90vh'
+      },
+      zIndex: {
+        '-1': '-1'
+      },
+      width: {
+        '87/p': '87%'
       }
     }
   },

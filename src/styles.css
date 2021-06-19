@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Neue Haas Display';
   src: url(/fonts/NeueHaasDisplay-XThin.ttf);
@@ -28,7 +32,3 @@
   src: url(/fonts/NeueHaasDisplay-Black.ttf);
   font-weight: 700;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
