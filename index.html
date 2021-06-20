@@ -7,25 +7,39 @@
   <meta name="description" content="Desarrollamos proyectos educativos en cultura, producción y turismo sostenible">
   <title>Chimboteros</title>
   <link rel="stylesheet" href="public/styles.css">
+  <script src="https://kit.fontawesome.com/542ea1a396.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-neue">
   <!-- header -->
   <header class="h-screen bg-header xl:bg-desk-header bg-cover bg-center relative">
-    <!-- <nav class="flex justify-center items-center bg-white" aria-label="main menu">
-      <a href="#Proposito">Propósito</a>
-      <a href="#Creaciones">Creaciones</a>
-      <a href="#Proceso">Proceso</a>
-      <a href="#Productos">Productos</a>
-      <a href="#Equipo">Equipo</a>
-      <a href="#Contacto">Contacto</a>
-    </nav> -->
+    <!-- nav -->
+    <nav class="fixed top-0 left-0 w-full flex justify-between xl:justify-center items-center bg-white bg-opacity-90 p-4 xl:h-16" aria-label="main menu">
+      <!-- menu -->
+      <ul id="menu" class="absolute xl:static top-12 left-0 w-full xl:w-max text-center h-0 overflow-hidden bg-white xl:bg-transparent transition duration-400 ease-in-out xl:h-auto xl:flex">
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Propósito">Propósito</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Creaciones">Creaciones</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Proceso">Proceso</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Productos">Productos</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Equipo">Equipo</a></li>
+        <li class="py-2.5 xl:py-0 xl:mx-5"><a class="text-dark-100" href="#Contacto">Contacto</a></li>
+      </ul>
+      <!-- logo chimboteros -->
+      <img class="w-9 order-first mr-3" src="/img/Chimboteros (ícono).png">
+      <!-- hamburger -->
+      <button id="hamburger" class="border-0 cursor-pointer focus:outline-none xl:hidden">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- facebook icon -->
+      <img class="hidden xl:block w-7 ml-2.5" src="/img/Fb (ícono).png">
+    </nav>
+    <!-- header content -->
     <div class="text-center w-9/12 xl:w-7/12 mx-auto pt-36 xl:pt-52">
       <img class="mx-auto w-full xl:w-8/12" src="/img/Chimboteros (logo).png" alt="Chimboteros logo">
       <p class="text-base lg:text-lg xl:text-2xl font-medium mt-5 xl:mt-12">Desarrollamos proyectos creativos en cultura, producción y turismo sostenible.</p>
     </div>
   </header>
   <!-- pescadores de sueños -->
-  <section class="h-screen bg-pescadores xl:bg-desk-pescadores bg-center bg-cover">
+  <section id="Propósito" class="h-screen bg-pescadores xl:bg-desk-pescadores bg-center bg-cover">
     <div class="text-center w-9/12 xl:w-1/2 mx-auto pt-16 xl:pt-36">
       <h2 class="text-white xl:text-pink text-5xl xl:text-7xl font-medium">Pescadores de sueños</h2>
       <p class="text-white xl:text-dark-100 text-base lg:text-lg xl:text-xl font-medium mt-5">En cada rincón de Chimbote existen tesoros por descubrir y muchos sueños por conquistar. Oportunidades y experiencias que les transforme la vida a miles de emprendedores. Ese es nuestro deseo.</p>
@@ -340,5 +354,6 @@
       </form>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

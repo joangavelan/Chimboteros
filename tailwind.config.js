@@ -29,7 +29,8 @@ module.exports = {
       },
       white: '#fff',
       black: '#000',
-      gray: '#C7CCD0'
+      gray: '#C7CCD0',
+      transparent: ' #ffffff00'
     },
     extend: {
       backgroundImage: theme => ({
