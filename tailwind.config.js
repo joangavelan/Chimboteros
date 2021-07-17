@@ -25,8 +25,10 @@ module.exports = {
         200: '#333333',
         300: '#2B2A28',
         400: '#626971',
-        500: '#BBBBBB'
+        500: '#BBBBBB',
+        600: '#929396'
       },
+      purple: '#8440B3',
       white: '#fff',
       black: '#000',
       gray: '#C7CCD0',
@@ -34,14 +36,17 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'header': "url('/img/mobile/Chicas en playa Chimbote.jpg')",
+        'header': "url('/img/mobile/pescador chimbote.jpg')",
         'pescadores': "url('/img/mobile/Pescadores de sueños.jpg')",
         'fotear': "url('/img/mobile/Travesía en el mar.jpg')",
         'gustar': "url('/img/mobile/Causa Ancashina.jpg')",
         'viva': "url('/img/mobile/Lanchas pesqueras Chimbote.jpg')",
         'aldea': "url('/img/mobile/Aldea.jpg')",
         'lindo': "url('/img/mobile/Arte Popular.jpg')",
+        'crear': "url('/img/mobile/fondo crear.jpg')",
         'internautas': "url('/img/mobile/Internautas.jpg')",
+        'oficina': "url('/img/mobile/oficina.jpg')",
+        'footer': "url('/img/mobile/footer-bg.jpg')",
         'puerto-de-chimbote': "url('/img/mobile/Puerto de Chimbote.jpg')",
         'desk-header': "url('/img/Chimboteros Portada.jpg')",
         'desk-pescadores': "url('/img/Equipo Gustar.jpg')",

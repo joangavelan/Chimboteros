@@ -32,3 +32,11 @@
   src: url(/fonts/NeueHaasDisplay-Black.ttf);
   font-weight: 700;
 }
+
+.brand-section {
+  @apply h-screen90 w-11/12 xl:w-10/12 mx-auto bg-cover bg-center bg-no-repeat my-12 xl:my-28;
+}
+
+.form-label {
+  @apply text-white inline-block mb-1 text-base xl:text-xl;
+}

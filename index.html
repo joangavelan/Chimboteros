@@ -6,61 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desarrollamos proyectos educativos en cultura, producción y turismo sostenible">
   <title>Chimboteros</title>
-  <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="dist/tailwind.css">
   <link rel="icon" type="image/png" href="/img/Chimboteros (Favicon).png">
   <script src="https://kit.fontawesome.com/542ea1a396.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-neue">
   <!-- header -->
-  <header class="h-screen bg-header xl:bg-desk-header bg-cover bg-center relative">
+  <header id="header" class="h-screen bg-header xl:bg-desk-header bg-cover bg-center relative">
     <!-- nav -->
-    <nav class="fixed top-0 left-0 z-50 w-full flex justify-between xl:justify-center items-center bg-white bg-opacity-90 p-4 xl:h-16" aria-label="main menu">
+    <nav class="fixed top-0 left-0 z-50 w-full flex justify-between xl:justify-center items-center bg-white bg-opacity-90 p-4 xl:h-16 backdrop-filter backdrop-saturate-100 backdrop-blur-sm" aria-label="main menu">
       <!-- menu -->
-      <ul id="menu" class="absolute xl:static top-12 left-0 w-full xl:w-max text-center h-0 overflow-hidden bg-white xl:bg-transparent transition duration-400 ease-in-out xl:h-auto xl:flex">
-        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Propósito">Propósito</a></li>
-        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Creaciones">Creaciones</a></li>
-        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Proceso">Proceso</a></li>
-        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Productos">Productos</a></li>
-        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#Equipo">Equipo</a></li>
-        <li class="py-2.5 xl:py-0 xl:mx-5"><a class="text-dark-100" href="#Contacto">Contacto</a></li>
+      <ul id="menu" class="absolute xl:static top-12 left-0 w-full xl:w-max text-center h-0 overflow-hidden bg-white xl:bg-transparent transition duration-400 ease-in-out xl:h-auto xl:flex xl:ml-3 xl:mr-2.5">
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#propósito">Propósito</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#creaciones">Creaciones</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#proceso">Proceso</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#productos">Productos</a></li>
+        <li class="py-2.5 xl:py-0 border-b xl:border-b-0 border-dark-500 xl:mx-5"><a class="text-dark-100" href="#equipo">Equipo</a></li>
+        <li class="py-2.5 xl:py-0 xl:mx-5"><a class="text-dark-100" href="#footer">Contacto</a></li>
       </ul>
       <!-- logo chimboteros -->
-      <img class="w-9 order-first mr-3" src="/img/Chimboteros (ícono).png">
+      <a href="#header" class="order-first">
+        <img class="w-9" src="/img/Chimboteros (ícono).png">
+      </a>
       <!-- hamburger -->
-      <button id="hamburger" class="border-0 cursor-pointer focus:outline-none xl:hidden">
+      <button id="hamburger" class="border-0 cursor-pointer focus:outline-none ml-auto vxl:hidden">
         <i class="fas fa-bars"></i>
       </button>
       <!-- facebook icon -->
-      <img class="hidden xl:block w-7 ml-2.5" src="/img/Fb (ícono).png">
+      <a href="https://www.facebook.com/chimboteros/" target="_blank">
+        <img class="hidden xl:block w-7" src="/img/Fb (ícono).png">
+      </a>
     </nav>
     <!-- header content -->
-    <div class="text-center w-9/12 xl:w-7/12 mx-auto pt-36 xl:pt-52">
-      <img class="mx-auto w-full xl:w-8/12" src="/img/Chimboteros (logo).png" alt="Chimboteros logo">
-      <p class="text-base lg:text-lg xl:text-2xl font-medium mt-5 xl:mt-12">Desarrollamos proyectos creativos en cultura, producción y turismo sostenible.</p>
+    <div class="text-center w-9/12 xl:w-7/12 mx-auto pt-52 xl:pt-52">
+      <img class="hidden xl:block mx-auto w-full xl:w-8/12" src="/img/Chimboteros (logo).png" alt="Chimboteros logo">
+      <img class="xl:hidden" src="/img/mobile/chimboteros logo.png"  alt="chimboteros logo">
+      <!-- <p class="text-base lg:text-lg xl:text-2xl font-medium mt-5 xl:mt-12">Desarrollamos proyectos creativos en cultura, producción y turismo sostenible.</p> -->
+      <p class="text-white font-semibold text-xl text-dark-600 mt-16 xl:text-3xl xl:font-light">2015 - 2021</p>
     </div>
   </header>
   <!-- pescadores de sueños -->
-  <section id="Propósito" class="h-screen bg-pescadores xl:bg-desk-pescadores bg-center bg-cover">
-    <div class="text-center w-9/12 xl:w-1/2 mx-auto pt-16 xl:pt-36">
-      <h2 class="text-white xl:text-pink text-5xl xl:text-7xl font-medium">Pescadores de sueños</h2>
-      <p class="text-white xl:text-dark-100 text-base lg:text-lg xl:text-xl font-medium mt-5">En cada rincón de Chimbote existen tesoros por descubrir y muchos sueños por conquistar. Oportunidades y experiencias que les transforme la vida a miles de emprendedores. Ese es nuestro deseo.</p>
+  <section id="propósito" class="h-screen bg-center bg-cover">
+    <div class="text-center w-9/12 xl:w-1/2 mx-auto pt-24  xl:pt-28">
+      <h2 class="text-pink xl:text-pink text-5xl xl:text-7xl font-medium">Pescadores de sueños</h2>
+      <p class="text-dark-100 xl:text-dark-100 text-base lg:text-lg xl:text-xl font-medium mt-5">En cada rincón de Chimbote existen tesoros por descubrir y muchos sueños por conquistar. Espacios y experiencias esperando su momento para convertirse en oportunidades productivas que les transforme la vida a miles de emprendedores. Ese es nuestro deseo.</p>
     </div>
+    <img class="mt-20" src="/img/velero.jpg" alt="velero">
   </section>
   <!-- creaciones -->
-  <section class="py-16 xl:py-32">
+  <section id="creaciones" class="py-20 xl:py-32">
     <div class="w-9/12 xl:w-10/12 mx-auto">
       <div class="text-center w-full xl:w-1/2 mx-auto xl:mb-16">
         <h2 class="text-dark-200 text-4xl lg:text-5xl xl:text-7xl font-medium">Creaciones <span class="hidden xl:inline">Culturales</span></h2>
-        <p class="text-dark-200 text-base lg:text-lg xl:text-xl font-medium mt-3 xl:mt-5">Creamos valor diseñando proyectos que fortalecen nuestra identidad y educan en un estilo de vida más sustentable para el planeta.</p>
+        <p class="text-dark-200 text-base lg:text-lg xl:text-xl font-medium mt-3 xl:mt-5">Desarrollamos proyectos creativos en cultura, producción y turismo; que fortalecen nuestra identidad y educan en un estilo de vida más sustentable con el planeta.</p>
       </div>
-      <!-- desk img -->
-      <img class="hidden xl:block" src="/img/Marcas.png" alt="Marcas culturales - Chimboteros">
+      <!-- <!-- desk img -->
+      <!-- <img class="hidden xl:block" src="/img/Marcas.png" alt="Marcas culturales - Chimboteros"> -->
       <!-- resp img -->
-      <img class="mt-5 xl:hidden" src="/img/mobile/Línea de marcas.png" alt="Línea temporal de marcas">
+      <img class="mt-10 xl:hidden w-full" src="/img/mobile/linea de marcas.jpg" alt="Línea temporal de marcas">
     </div>
   </section>
   <!-- fotear -->
-  <section class="h-screen xl:h-screen90 xl:w-10/12 xl:mx-auto bg-fotear xl:bg-desk-fotear bg-cover bg-center bg-no-repeat xl:my-28">
+  <section class="brand-section bg-fotear xl:bg-desk-fotear">
     <div class="text-center pt-16 xl:pt-20 w-8/12 xl:w-4/12 mx-auto">
       <small class="text-pink text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2016</small>
       <div class="my-3 xl:mb-5">
@@ -68,11 +75,11 @@
         <i class="text-2xl lg:text-3xl text-dark-100">Fotografía Cultural</i>
       </div>
       <p class="text-base lg:text-lg xl:text-2xl text-dark-100">Recorrimos nuestra provincia para investigar sus riquezas y compartirlas con la comunidad.</p>
-      <a href="#" class="text-pink text-base lg:text-lg xl:text-xl inline-block mt-2 font-medium xl:font-normal">Ver más +</a>
+      <a href="#" class="text-pink text-base lg:text-lg xl:text-xl inline-block mt-3 font-medium xl:font-normal">Ver más +</a>
     </div>
   </section>
   <!-- gustar -->
-  <section class="h-screen xl:h-screen90 xl:w-10/12 xl:mx-auto bg-gustar xl:bg-desk-gustar bg-cover bg-center bg-no-repeat xl:my-28">
+  <section class="brand-section bg-gustar xl:bg-desk-gustar">
     <div class="text-center pt-16 w-8/12 xl:w-5/12 mx-auto">
       <small class="text-yellow text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2017</small>
       <div class="my-3 xl:mb-5">
@@ -80,11 +87,11 @@
         <i class="text-2xl lg:text-3xl text-white">Sabor Cultural</i>
       </div>
       <p class="text-base lg:text-lg xl:text-2xl text-white">Investigamos la cadena de valor de nuestra gastronomía para impulsar la innovación culinaria hacia el turismo.</p>
-      <a href="#" class="text-yellow text-base lg:text-lg xl:text-xl inline-block mt-2 font-medium xl:font-normal">Ver más +</a>
+      <a href="#" class="text-yellow text-base lg:text-lg xl:text-xl inline-block mt-3 font-medium xl:font-normal">Ver más +</a>
     </div>
   </section>
   <!-- viva -->
-  <section class="h-screen xl:h-screen90 xl:w-10/12 xl:mx-auto bg-viva xl:bg-desk-viva bg-cover bg-center bg-no-repeat xl:my-28">
+  <section class="brand-section bg-viva xl:bg-desk-viva">
     <div class="text-center pt-16 xl:pt-24 w-8/12 xl:w-4/12 mx-auto">
       <small class="text-gold-200 text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2018</small>
       <div class="my-3 xl:mb-5">
@@ -92,35 +99,11 @@
         <i class="text-2xl lg:text-3xl text-black">Historia Cultural</i>
       </div>
       <p class="text-base lg:text-lg xl:text-2xl text-black">Viajamos en el tiempo para desvelar las rutas de la enigmatica historia viva de Chimbote.</p>
-      <a href="#" class="text-gold-200 text-base lg:text-lg xl:text-xl inline-block mt-2 font-medium xl:font-normal">Ver más +</a>
-    </div>
-  </section>
-  <!-- aldea -->
-  <section class="h-screen xl:h-screen90 xl:w-10/12 xl:mx-auto bg-aldea xl:bg-desk-aldea bg-cover bg-center xl:bg-top bg-no-repeat xl:my-28">
-    <div class="text-center pt-16 w-8/12 xl:w-4/12 mx-auto">
-      <small class="text-aqua text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2019</small>
-      <div class="my-3 xl:mb-5">
-        <h2 class="text-6xl lg:text-7xl text-white font-medium">Aldea</h2>
-        <i class="text-2xl lg:text-3xl text-white">Arquitectura Cultural</i>
-      </div>
-      <p class="text-base lg:text-lg xl:text-2xl text-white">Soñamos con ciudades cuyos espacios sean en sí mismos experiencias turísticas por amar.</p>
-      <p class="text-aqua font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-1 xl:mt-3">:: Próximamente ::</p>
-    </div>
-  </section>
-  <!-- lindo -->
-  <section class="h-screen xl:h-screen90 xl:w-10/12 xl:mx-auto bg-lindo xl:bg-desk-lindo bg-cover bg-center bg-no-repeat xl:my-28">
-    <div class="text-center pt-16 w-8/12 xl:w-5/12 mx-auto">
-      <small class="text-yellow text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2020</small>
-      <div class="my-3 xl:mb-5">
-        <h2 class="text-6xl lg:text-7xl text-white font-medium">Lindo</h2>
-        <i class="text-2xl lg:text-3xl text-white">Arte Popular</i>
-      </div>
-      <p class="text-base lg:text-lg xl:text-2xl text-white">Promovemos la creación artística para transformar el talento en productos inspiradores de una industria cultural.</p>
-      <p class="text-yellow font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-1 xl:mt-3">:: Próximamente ::</p>
+      <a href="#" class="text-gold-200 text-base lg:text-lg xl:text-xl inline-block mt-3 font-medium xl:font-normal">Ver más +</a>
     </div>
   </section>
   <!-- internautas -->
-  <section class="h-screen85 xl:h-screen90 xl:w-10/12 xl:mx-auto bg-internautas xl:bg-desk-internautas bg-cover bg-center bg-no-repeat xl:my-28">
+  <section class="brand-section bg-internautas xl:bg-desk-internautas">
     <div class="text-center pt-16 w-8/12 xl:w-5/12 mx-auto">
       <small class="text-blue-100 text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2021</small>
       <div class="my-3 xl:mb-5">
@@ -128,11 +111,46 @@
         <i class="text-2xl lg:text-3xl text-black">tecnología cultural</i>
       </div>
       <p class="text-base lg:text-lg xl:text-2xl text-black">Unamos Chimbote desde el autodescubrimiento de sus riquezas, la creación de cultura y el desarrollo del turismo.</p>
-      <p class="text-blue-100 font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-1 xl:mt-3">:: Ver más ::</p>
+      <p class="text-blue-100 font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-3">:: Ver más ::</p>
+    </div>
+  </section>
+  <!-- lindo -->
+  <section class="brand-section bg-lindo xl:bg-desk-lindo">
+    <div class="text-center pt-16 w-8/12 xl:w-5/12 mx-auto">
+      <!-- <small class="text-yellow text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2020</small> -->
+      <div class="my-3 xl:mb-5">
+        <h2 class="text-6xl lg:text-7xl text-white font-medium">Lindo</h2>
+        <i class="text-2xl lg:text-3xl text-white">Arte Popular</i>
+      </div>
+      <p class="text-base lg:text-lg xl:text-2xl text-white">Promovemos la creación artística para transformar el talento en productos inspiradores de una industria cultural.</p>
+      <p class="text-yellow font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-3">:: Próximamente ::</p>
+    </div>
+  </section>
+  <!-- aldea -->
+  <section class="brand-section bg-aldea xl:bg-desk-aldea">
+    <div class="text-center pt-16 w-8/12 xl:w-4/12 mx-auto">
+      <small class="text-aqua text-base lg:text-lg xl:text-xl border rounded-full py-1 px-4">2019</small>
+      <div class="my-3 xl:mb-5">
+        <!-- <h2 class="text-6xl lg:text-7xl text-white font-medium">Aldea</h2> -->
+        <i class="text-2xl lg:text-3xl text-white">Arquitectura Cultural</i>
+      </div>
+      <p class="text-base lg:text-lg xl:text-2xl text-white">Soñamos con ciudades cuyos espacios sean en sí mismos experiencias turísticas por amar.</p>
+      <p class="text-aqua font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-3">:: Próximamente ::</p>
+    </div>
+  </section>
+  <!-- crear -->
+  <section class="brand-section bg-crear">
+    <div class="text-center pt-16 w-8/12 xl:w-4/12 mx-auto">
+      <div class="my xl:mb-5">
+        <h2 class="text-6xl lg:text-7xl text-white font-medium">Crear</h2>
+        <i class="text-2xl lg:text-3xl text-white">Emprende Cultural</i>
+      </div>
+      <p class="text-base lg:text-lg xl:text-2xl text-white">Forjemos riqueza para el cuerpo y el alma, para la economía y el ambiente, para la vida.</p>
+      <p class="text-purple font-medium xl:font-normal text-base xl:text-xl lg:text-lg mt-3">:: Próximamente ::</p>
     </div>
   </section>
   <!-- proceso -->
-  <section class="py-16 xl:py-32 xl:border-t border-dark-500">
+  <section id="proceso" class="py-16 xl:py-32 xl:border-t border-dark-500">
     <div class="w-9/12 mx-auto">
       <div class="text-center xl:w-8/12 xl:mx-auto mb-7 xl:mb-40">
         <h2 class="text-dark-100 text-4xl lg:text-5xl xl:text-7xl font-medium mb-1.5 xl:mb-4">Proceso</h2>
@@ -173,7 +191,7 @@
     </div>
   </section>
   <!-- productos -->
-  <section class="py-16 xl:py-28 bg-black">
+  <section id="productos" class="py-16 xl:py-28 bg-black">
     <div class="w-9/12 mx-auto">
       <div class="mb-8 xl:mb-16 text-center xl:w-8/12 mx-auto">
         <h2 class="text-gold-100 xl:text-white text-4xl xl:text-7xl lg:text-5xl font-medium mb-2 xl:mb-5">Productos</h2>
@@ -223,8 +241,8 @@
         </div>
         <!-- grid item -->
         <div class="relative">
-          <img src="/img/mobile/Pescador Chimbotero.jpg" alt="Pescador chimbotero entrando al mar en su bote">
-          <div class="text-white text-center absolute top-8 left-1/2 transform -translate-x-1/2">
+          <img class="w-full" src="/img/mobile/documentales.jpg" alt="Pescador chimbotero entrando al mar en su bote">
+          <div class="text-white text-center absolute bottom-8 left-1/2 transform -translate-x-1/2">
             <h3 class="text-3xl lg:text-5xl font-medium leading-6">Documentales</h3>
             <em class="text-xs lg:text-lg">Las buenas historias de Chimbote</em>
           </div>
@@ -233,11 +251,11 @@
     </div>
   </section>
   <!-- equipo -->
-  <section class="py-14 xl:py-28">
+  <section id="equipo" class="py-14 xl:py-28">
     <div class="w-9/12 xl:w-8/12 mx-auto">
       <div class="text-dark-100 text-center mb-10 xl:mb-20 xl:w-7/12 xl:mx-auto">
         <h2 class="text-4xl lg:text-5xl xl:text-7xl font-medium mb-3 xl:mb-5">Equipo <span class="inline xl:hidden">Creativo</span></h2>
-        <p class="text-base lg:text-lg xl:text-xl font-medium">Un buen trabajo es posible gracias al talento y compromiso de amigos chimboteros con valores compartidos y una visión común: el cambio cultural.</p>
+        <p class="text-base lg:text-lg xl:text-xl font-medium">Un buen trabajo es posible gracias al talento, compromiso y valores compartidos con un propósito común: el cambio cultural.</p>
       </div>
       <!-- grid -->
       <div class="relative grid grid-cols-2 xl:grid-cols-5 gap-x-10 xl:gap-x-24 gap-y-6 xl:gap-y-14">
@@ -247,7 +265,7 @@
         <div class="flex flex-col text-center">
           <div class="order-last xl:order-first">
             <h4 class="text-gold-100 text-lg xl:text-xl font-medium leading-none">David Aguedo</h4>
-            <em class="text-dark-200 text-base xl:text-lg">diseño</em>
+            <em class="text-dark-200 text-base xl:text-lg">dirección</em>
           </div>
           <img class="mx-auto mb-4 xl:mb-0 xl:mt-4" src="/img/Equipo/David Aguedo Roncal.png" alt="David Aguedo Roncal">
         </div>
@@ -326,33 +344,37 @@
       </div>
     </div>
   </section>
+  <section class="h-screen bg-oficina bg-cover bg-center">
+
+  </section>
   <!-- footer -->
-  <footer class="h-screen bg-puerto-de-chimbote xl:bg-desk-footer bg-cover bg-center py-16 xl:py-24 lg:py-20">
+  <footer id="footer" class="relative h-screen bg-footer xl:bg-desk-footer bg-cover bg-center py-24 xl:py-24 lg:py-20">
     <div class="w-9/12 lg:w-96 xl:w-4/12 mx-auto">
-      <div class="text-dark-200 text-center mb-10">
+      <div class="text-white xl:text-dark-200 text-center mb-10">
         <h2 class="text-4xl lg:text-7xl xl:font-8xl font-medium">Hola!</h2>
-        <em class="text-lg lg:text-2xl xl:text-3xl font-medium xl:font-normal">Consultas y sugerencias</em>
+        <em class="text-base lg:text-2xl xl:text-3xl font-medium xl:font-normal">Consultas y sugerencias</em>
       </div>
       <!-- form -->
-      <form class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4" name="contact" netlify>
+      <form class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 mt-60" name="contact" netlify>
         <!-- nombres -->
         <div class="col-span-1 relative">
-          <label for="name" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Nombres:</label>
-          <input type="text" id="name" name="name" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-full py-2 px-3 xl:px-4">
+          <label for="name" class="form-label">Nombres:</label>
+          <input type="text" id="name" name="name" required class="text-neue text-sm xl:text-lg block w-full outline-none rounded-full py-2 px-3 xl:px-4 opacity-70">
         </div>
         <!-- correo -->
         <div class="col-span-1 relative">
-          <label for="email" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Correo:</label>
-          <input type="email" id="email" name="email" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-full py-2 px-3 xl:px-4">
+          <label for="email" class="form-label">Correo:</label>
+          <input type="email" id="email" name="email" required class="text-neue text-sm xl:text-lg block w-full outline-none rounded-full py-2 px-3 xl:px-4 opacity-70">
         </div>
         <!-- mensaje -->
         <div class="col-span-1 relative lg:col-span-2">
-          <label for="message" class="inline-block mb-0.5 lg:mb-1 text-base xl:text-xl">Mensaje:</label>
-          <textarea id="message" name="message" cols="30" rows="3" required class="text-neue text-sm xl:text-lg block w-full border border-dark-400 outline-none rounded-2xl py-2 px-3 xl:px-4"></textarea>
+          <label for="message" class="form-label">Mensaje:</label>
+          <textarea id="message" name="message" cols="30" rows="3" required class="text-neue text-sm xl:text-lg block w-full outline-none rounded-2xl py-2 px-3 xl:px-4 opacity-70"></textarea>
         </div>
         <!-- submit -->
-        <button type="submit" class="col-span-1 relative lg:col-span-2 block mx-auto py-1.5 xl:py-2 px-6 xl:px-8 text-white bg-dark-300 rounded-full text-sm lg:text-base xl:text-lg outline-none border-0 mt-3 tracking-wide focus:outline-none">Enviar</button>
+        <button type="submit" class="col-span-1 relative lg:col-span-2 block mx-auto py-1.5 xl:py-2 px-6 xl:px-8 text-dark-200 bg-white rounded-full text-sm lg:text-base xl:text-lg outline-none border-0 mt-3 tracking-wide focus:outline-none">Enviar</button>
       </form>
+      <address class="w-full text-center bg-black text-white absolute bottom-0 left-0 p-5 not-italic text-xs">CULTURALISMO S.A.C / Jr. Ladislao Espinar 621 Of. 26. Chimbote, Perú</address>
     </div>
   </footer>
   <script src="script.js"></script>
