@@ -28,10 +28,15 @@ module.exports = {
         500: '#BBBBBB',
         600: '#929396'
       },
+      red: {
+        100: '#F5004B'
+      },
       purple: '#8440B3',
       white: '#fff',
       black: '#000',
-      gray: '#C7CCD0',
+      gray: {
+        100: '#DFDFDF'
+      },
       transparent: ' #ffffff00'
     },
     extend: {
@@ -56,6 +61,8 @@ module.exports = {
         'desk-internautas': "url('/img/Smartphones.jpg')",
         'desk-aldea': "url('/img/Proyecto Aldea Portada.jpg')",
         'desk-lindo': "url('/img/Proyecto Lindo Portada.jpg')",
+        'desk-crear': "url('/img/fondo-crear.jpg')",
+        // 'desk-crear': "url('/img/')",
         'desk-footer': "url('/img/Isla Blanca.jpg')",
         'proceso': "url('/img/proceso-fondo.png')",
         'equipo': "url('/img/equipo-fondo.png')"

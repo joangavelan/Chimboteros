@@ -38,5 +38,33 @@
 }
 
 .form-label {
-  @apply text-white inline-block mb-1 text-base xl:text-xl;
+  @apply text-white inline-block mb-1 text-base xl:text-xl xl:text-dark-200;
+}
+
+.brand {
+  @apply text-center;
+}
+
+.brand-image {
+  @apply w-full mb-7 h-44;
+}
+
+.brand-name {
+  @apply text-2xl font-medium;
+}
+
+.brand-tagline {
+  @apply text-xl text-dark-400;
+}
+
+.dot {
+  @apply w-3 h-3 rounded-full border border-dark-200 mx-auto bg-white;
+}
+
+.dot.active {
+  @apply bg-red-100 border-red-100;
+}
+
+.timeline-date {
+  @apply text-2xl text-dark-200 text-center;
 }
