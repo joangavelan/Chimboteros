@@ -58,7 +58,7 @@ module.exports = {
         'desk-fotear': "url('/img/Navegando en el mar.jpg')",
         'desk-gustar': "url('/img/Gustar Portada.jpg')",
         'desk-viva': "url('/img/Chimbote en los 50s.jpg')",
-        'desk-internautas': "url('/img/Smartphones.jpg')",
+        'desk-internautas': "url('/img/internautas.jpg')",
         'desk-aldea': "url('/img/Proyecto Aldea Portada.jpg')",
         'desk-lindo': "url('/img/Proyecto Lindo Portada.jpg')",
         'desk-crear': "url('/img/fondo-crear.jpg')",
